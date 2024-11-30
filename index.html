@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<title>Frontend Mentor | NFT preview card component</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+  height: 80vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;border-radius: 20px;
+
+}
+main>img {
+  height: 300px;
+  border-radius: 10px;
+}
+main>div {
+  display: flex;
+}
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.secondDiv {
+   align-items: center;
+   gap: 10px;
+}
+.avatar {
+   height: 50px;
+}
+h2 {
+  color: white;
+}
+hr{
+  color:  hsl(215, 32%, 27%);
+}
+.firstDiv h3 {
+  color: hsl(178, 100%, 50%);
+}
+p {
+  color: hsl(215, 51%, 70%);
+}
+p span {
+  color: #fff;
+}
+
+
+</style>
+</head>
+<body>
+  
+  <main>
+
+    <img src="./images/image-equilibrium.jpg" alt="img">
+    
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="firstDiv">
+      <h3> <img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</h3>
+      <p> 3 days left</p>
+    </div>
+    <hr>
+    <div class="secondDiv">
+      <img class="avatar"  src="./images/image-avatar.png" alt="img">
+      <p> Creation of <span>Jules Wyvern</span></p>
+    </div>
+
+  </main>
+
+  
+</body>
+</html>
